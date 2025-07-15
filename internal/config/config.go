@@ -2,6 +2,8 @@ package config
 
 import (
 	"os"
+
+	"github.com/joho/godotenv"
 )
 
 type Config struct {
@@ -19,9 +21,12 @@ type Config struct {
 	JWTSecret    string
 	Port         string
 	Environment  string
+	CORSHost     string
 }
 
 func Load() *Config {
+	_ = godotenv.Load() // .env dosyasını yükle
+
 	return &Config{
 		DBType:       getEnv("DB_TYPE", "sqlite"),
 		SQLitePath:   getEnv("SQLITE_PATH", "data/sqlite/sqlite.db"),
@@ -37,6 +42,7 @@ func Load() *Config {
 		JWTSecret:    getEnv("JWT_SECRET", "your-super-secret-jwt-key-change-in-production"),
 		Port:         getEnv("PORT", "8080"),
 		Environment:  getEnv("ENVIRONMENT", "development"),
+		CORSHost:     getEnv("CORS_HOST", "*"),
 	}
 }
 

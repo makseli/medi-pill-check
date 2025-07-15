@@ -21,6 +21,7 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /app
 
 COPY --from=builder /app/main .
+COPY --from=builder /app/.env .
 
 # SQLite dosyası için data klasörü
 RUN mkdir -p /app/data

@@ -7,7 +7,7 @@ import (
 	"github.com/makseli/medi-pill-check/internal/middleware"
 )
 
-func Setup(r *gin.Engine, h *handlers.Handlers) {
+func Setup(r *gin.Engine, h *handlers.Handlers, mh *handlers.MedicineHandler) {
 	r.GET("/", h.Health)
 
 	api := r.Group("/api")
@@ -23,6 +23,14 @@ func Setup(r *gin.Engine, h *handlers.Handlers) {
 			auth.GET("/users/:id", h.GetUser)
 			auth.PUT("/users/:id", h.UpdateUser)
 			auth.DELETE("/users/:id", h.DeleteUser)
+
+			auth.POST("/medications", mh.Create)
+			auth.GET("/medications", mh.List)
+			auth.GET("/medications/:id", mh.Get)
+			auth.PUT("/medications/:id", mh.Update)
+			auth.DELETE("/medications/:id", mh.Delete)
+			auth.POST("/logout", h.Logout)
+			auth.POST("/refresh", h.RefreshToken)
 		}
 	}
 }
