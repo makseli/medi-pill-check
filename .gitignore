@@ -1,1 +1,9 @@
+.env
 .vscode
+.cursor
+
+data/sqlite
+data/sqlite/db.sqlite
+data/sqlite/db.sqlite-journal
+data/sqlite/db.sqlite-wal
+data/sqlite/db.sqlite-shm

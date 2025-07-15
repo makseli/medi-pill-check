@@ -1,0 +1,48 @@
+# Cursor özel kuralları
+# Kod yazma, sadece istenen işlemleri uygula
+
+# Proje dosya & dizin yapısı (önerilen)
+#
+# medi-pill-check/
+# ├── cmd/
+# │   └── server/
+# ├── internal/
+# │   ├── config/
+# │   ├── database/
+# │   ├── handlers/
+# │   ├── middleware/
+# │   ├── models/
+# │   ├── routes/
+# │   ├── services/
+# │   └── utils/
+# ├── pkg/
+# │   ├── auth/
+# │   └── validator/
+# ├── docs/
+# │   ├── api/
+# │   ├── deployment/
+# │   └── development/
+# ├── test/
+# │   ├── integration/
+# │   └── e2e/
+# ├── deploy/
+# │   ├── docker/
+# │   ├── k8s/
+# │   └── scripts/
+# ├── data/
+# │   ├── sqlite/
+# │   ├── postgresql/
+# │   └── redis/
+# ├── web/
+# ├── mobile/
+# ├── scripts/
+# ├── logs/
+# ├── .env.example
+# ├── .gitignore
+# ├── docker-compose.yml
+# ├── Dockerfile
+# ├── go.mod
+# ├── go.sum
+# ├── Makefile
+# ├── README.md
+# └── LICENSE 

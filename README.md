@@ -5,6 +5,7 @@
 ## ✨ Features
 
 - Create a daily medication schedule
+- Seizure Tracking and Management
 - Reminder system (notification support planned)
 - Web and mobile UI
 - Open source and privacy-friendly
@@ -15,9 +16,9 @@
 The project is currently under active development. The backend is being built with Golang, and frontend/mobile options are being explored.
 
 Planned components:
-- [ ] REST API (Golang)
-- [ ] Web frontend (React/Svelte)
-- [ ] Mobile app (Flutter/React Native)
+- [ ] REST API ( Golang )
+- [ ] Web frontend ( VueJS maybe )
+- [ ] Mobile app ( React Native )
 - [ ] Docker deployment support
 - [ ] Database integration ( PostgreSQL or Sqlite )
 
@@ -50,6 +51,7 @@ MedipillCheck, günlük ilaçlarınızı takip etmenizi kolaylaştıran açık k
 ## ✨ Özellikler
 
 - Günlük ilaç takvimi oluşturma
+- Nöbet Takibi ve Yönetimi
 - Hatırlatma sistemi (bildirim desteği planlanıyor)
 - Web ve mobil arayüz
 - Açık kaynak ve gizlilik dostu
@@ -60,9 +62,9 @@ MedipillCheck, günlük ilaçlarınızı takip etmenizi kolaylaştıran açık k
 Proje şu anda aktif geliştirme aşamasındadır. Backend Golang ile yazılmakta, mobil ve web arayüzü için seçenekler değerlendirilmektedir.
 
 Planlanan bileşenler:
-- [ ] REST API (Golang)
-- [ ] Web arayüzü ( soon )
-- [ ] Mobil uygulama (React Native)
+- [ ] REST API ( Golang )
+- [ ] Web arayüzü ( VueJS )
+- [ ] Mobil uygulama ( React Native )
 - [ ] Docker ile dağıtım desteği
 - [ ] Veritabanı entegrasyonu (PostgreSQL veya Sqlite)
 
